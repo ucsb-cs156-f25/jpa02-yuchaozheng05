@@ -47,6 +47,12 @@ public class TeamTest {
         assertEquals(false, team.equals(t2));
     }
     @Test
+    public void equals_returns_false_when_different_name() {
+        Team t2 = new Team("different-name");
+        assertEquals(false, team.equals(t2));
+    }
+    
+    @Test
     public void hashCode_return_expected_value(){
         int result = team.hashCode();
         int expectedResult = -1226298695;
