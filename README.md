@@ -4,10 +4,7 @@
 Repo: https://github.com/ucsb-cs156-f25/jpa02-yuchaozheng05
 
 
-https://jpa02-yuchaozheng05.dokku-07.cs.ucsb.edu
-
-
-Deployed at: https://jpa02-replace-me.dokku-xx.cs.ucsb.edu
+Deployed at: https://jpa02-yuchaozheng05.dokku-07.cs.ucsb.edu
 
 
 # About this repo
