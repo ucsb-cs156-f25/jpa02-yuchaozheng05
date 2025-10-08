@@ -40,7 +40,7 @@ public class Developer {
         Team team = new Team("f25-07");
         team.addMember("Yuchao Zheng");
         team.addMember("Arman Sajjadian");
-        team.addMember("Evelyn Xu");
+        team.addMember("Sicheng Xu");
         team.addMember("Ian Sheinis");
         team.addMember("Jakinda Zhang");
         team.addMember("Matthew Mandell");
