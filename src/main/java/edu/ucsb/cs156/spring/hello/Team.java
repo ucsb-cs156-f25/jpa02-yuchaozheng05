@@ -75,6 +75,7 @@ public class Team {
         }
         Team other = (Team) obj;
         return this.name.equals(other.name) && this.members.equals(other.members);
+        
     }
 
     /*
