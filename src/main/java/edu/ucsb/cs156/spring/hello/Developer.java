@@ -38,12 +38,10 @@ public class Developer {
     public static Team getTeam() {
         
         Team team = new Team("f25-07");
-        team.addMember("YUCHAO");
-        team.addMember("ARMAN EHSAN");
-        team.addMember("SICHENG");
-        team.addMember("IAN KENTO IZUKA");
-        team.addMember("JAKINDA");
-        team.addMember("MATT ARTHUR");
+        String[] name = {"SICHENG", "JAKINDA", "ARMAN EHSAN", "YUCHAO", "IAN KENTO IZUKA", "MATT ARTHUR"};
+        for (String n: name){
+            team.addMember(n);
+        }
         return team;
     }
 }

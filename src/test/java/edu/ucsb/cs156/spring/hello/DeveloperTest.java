@@ -43,12 +43,16 @@ public class DeveloperTest {
     @Test
     public void getTeam_returns_team_with_correct_members() {
         Team t = Developer.getTeam();
-        assertTrue(t.getMembers().contains("YUCHAO"),"Team should contain YUCHAO");
-        assertTrue(t.getMembers().contains("ARMAN EHSAN"),"Team should contain ARMAN EHSAN");
-        assertTrue(t.getMembers().contains("SICHENG"),"Team should contain SICHENG"); 
-        assertTrue(t.getMembers().contains("IAN KENTO IZUKA"),"Team should contain IAN KENTO IZUKA");
-        assertTrue(t.getMembers().contains("JAKINDA"),"Team should contain JAKINDA");
-        assertTrue(t.getMembers().contains("MATT ARTHUR"),"Team should contain MATT ARTHUR");
+        // assertTrue(t.getMembers().contains("YUCHAO"),"Team should contain YUCHAO");
+        // assertTrue(t.getMembers().contains("ARMAN EHSAN"),"Team should contain ARMAN EHSAN");
+        // assertTrue(t.getMembers().contains("SICHENG"),"Team should contain SICHENG"); 
+        // assertTrue(t.getMembers().contains("IAN KENTO IZUKA"),"Team should contain IAN KENTO IZUKA");
+        // assertTrue(t.getMembers().contains("JAKINDA"),"Team should contain JAKINDA");
+        // assertTrue(t.getMembers().contains("MATT ARTHUR"),"Team should contain MATT ARTHUR");
+        String[] name = {"SICHENG", "JAKINDA", "ARMAN EHSAN", "YUCHAO", "IAN KENTO IZUKA", "MATT ARTHUR"};
+        for (String n: name){
+            assertTrue(t.getMembers().contains(n),"Team should contain " + n);
+        }
     }
 
 }
