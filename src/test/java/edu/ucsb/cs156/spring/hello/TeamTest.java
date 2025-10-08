@@ -41,17 +41,30 @@ public class TeamTest {
         assertEquals(true, team.equals(t2));
     }
     @Test
-    public void equal_return_when_same_name_and_different_member(){
-        Team t2=new Team("T2");
+    public void equal_return_false_when_same_name_and_different_member(){
+        Team t2=new Team("test-team");
         t2.addMember("Alice");
         assertEquals(false, team.equals(t2));
     }
     @Test
     public void equals_returns_false_when_different_name() {
         Team t2 = new Team("different-name");
+        //t2.addMember("Alice");
         assertEquals(false, team.equals(t2));
     }
-    
+    @Test
+    public void equals_return_false_when_different_name_and_member() {
+        Team t2 = new Team("different-name");
+        t2.addMember("Alice");
+        assertEquals(false, team.equals(t2));
+    }
+    @Test
+    public void equals_return_false_when_different_name_but_same_members() {
+        Team t2 = new Team("different-name");
+        t2.setMembers(team.getMembers());
+        assertEquals(false, team.equals(t2));
+    }
+
     @Test
     public void hashCode_return_expected_value(){
         int result = team.hashCode();
